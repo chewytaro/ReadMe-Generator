@@ -55,32 +55,32 @@ inquirer
   .then((data) => {
     fs.writeFile("README.md", `# Title: ${data.title}
 
-## Table of Contents
+# Table of Contents
 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Credits](#Credits)
-- [Tests](#Tests)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Tests](#tests)
     
-## Description, Installation, Usage, Contributing, and Tests
+# Description, Installation, Usage, Contributing, and Tests
     
-    Description:
-    ${data.description} 
+# Description:
+  ${data.description} 
 
-    Installation: 
-    ${data.installation}
+# Installation: 
+  ${data.installation}
 
-    Usage:
-    ${data.usage}
+# Usage:
+  ${data.usage}
     
-    Credits:
-    ${data.contribution}
+# Credits:
+  ${data.contribution}
     
-    Tests:
-    ${data.tests}
+# Tests:
+  ${data.tests}
     
-## Questions
+# Questions
     
     - [My Github](${data.github})
     

@@ -1,31 +1,31 @@
 # Title: 
 
-## Table of Contents
+# Table of Contents
 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Credits](#Credits)
-- [Tests](#Tests)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Tests](#tests)
     
-## Description, Installation, Usage, Contributing, and Tests
+# Description, Installation, Usage, Contributing, and Tests
     
-    Description:
-     
+# Description:
+   
 
-    Installation: 
-    
+# Installation: 
+  
 
-    Usage:
+# Usage:
+  
     
+# Credits:
+  
     
-    Credits:
+# Tests:
+  
     
-    
-    Tests:
-    
-    
-## Questions
+# Questions
     
     - [My Github]()
     
