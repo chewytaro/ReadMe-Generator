@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-inquirer
-  .prompt([
+const questionsArray = [
     {
       type: 'input',
       name: 'title',
@@ -38,7 +38,7 @@ inquirer
     {
       type: 'input',
       name: 'github',
-      message: 'What is your GitHub link?',
+      message: 'What is your GitHub username?',
     },
     {
       type: 'input',
@@ -48,45 +48,36 @@ inquirer
     {
       type: 'list',
       message: 'Please pick from the available licenses?',
-      name: 'contact',
-      choices: ['Apache License 2.0', 'MIT License', 'Eclipse Public License'],
+      name: 'license',
+      choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
     },
-  ])
-  .then((data) => {
-    fs.writeFile("README.md", `# Title: ${data.title}
+  ];
 
-# Table of Contents
+// Function to write README file
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [Tests](#tests)
-    
-# Description, Installation, Usage, Contributing, and Tests
-    
-# Description:
-  ${data.description} 
-
-# Installation: 
-  ${data.installation}
-
-# Usage:
-  ${data.usage}
-    
-# Credits:
-  ${data.contribution}
-    
-# Tests:
-  ${data.tests}
-    
-# Questions
-    
-    - [My Github](${data.github})
-    
-    If there are any additional questions you can reach me at my email: 
-    ${data.email}` , 
-    (err) =>
-      err ? console.log(err) : console.log('Success!')
-    );
+function writeToFile(fileName, data) {
+  // Use fs to write data to a file
+  fs.writeFile(fileName, data, (err) => {
+      if (err) {
+          console.log(err); 
+      }
+      else {
+          console.log('README.md created!'); 
+      }   
   });
+}
+
+// Function to initialize app
+
+function init() {
+  // Use inquirer to prompt user with questions and then generate README file based on their responses
+  inquirer.prompt(questionsArray)
+      .then((data) => {
+          const readme = generateMarkdown(data);
+          writeToFile('README.md', readme);
+      });
+}
+
+// Call function to initialize app
+
+init();
