@@ -59,19 +59,19 @@ function generateMarkdown(data) {
 - [Questions](#questions)
     
 # Description:
-  ${data.description} 
+  - ${data.description} 
 
 # Installation: 
-  ${data.installation}
+  - ${data.installation}
 
 # Usage:
-  ${data.usage}
+  - ${data.usage}
     
 # Credits:
-  ${data.contribution}
+  - ${data.contribution}
     
 # Tests:
-  ${data.tests}
+  - ${data.tests}
     
 # Questions
     

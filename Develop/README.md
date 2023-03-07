@@ -12,19 +12,19 @@
 - [Questions](#questions)
     
 # Description:
-  The goal of this project is to create a ReadMe Generator so that it is quick and easy for developers to use.  
+  - A simple ReadMe generator for developers to use. 
 
 # Installation: 
-  To use, simply activate it in terminal where you will be prompted with questions to answer. After answering questions, your ReadMe file will be generated for you.
+  - Open this in terminal, run through node, answer questions, and ReadMe will be generated
 
 # Usage:
-  Activate in terminal and answer prompted questions, afterwards a ReadMe will be generated for you.
+  - Open in terminal, questions will be prompted, answering them will help generate a fast and easy ReadMe.
     
 # Credits:
-  Starter code provided by the UW  FullStack Bootcamp!
+  - The starter code was provided through the UW FullStack Bootcamp
     
 # Tests:
-  N/A
+  - N/A
     
 # Questions
     
