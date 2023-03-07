@@ -18,7 +18,8 @@
   To use, simply activate it in terminal where you will be prompted with questions to answer. After answering questions, your ReadMe file will be generated for you.
 
 # Usage:
-  Activate in terminal and answer prompted questions, afterwards a ReadMe will be generated for you.
+  Activate in terminal and answer prompted questions, afterwards a ReadMe will be generated for you. 
+  Here is a link to a tutorial video: https://drive.google.com/file/d/12Hu_9kVetaWhO6G6mttAOR_lIUV86utS/view
     
 # Credits:
   Starter code provided by the UW  FullStack Bootcamp!
